@@ -44,7 +44,7 @@ You have 3 instant ways to verify the extension is active and protecting your pl
 
 2. **Browser Developer Console (F12):**
    - Open DevTools (`F12` or `Ctrl + Shift + I`) on YouTube Music.
-   - You will see the initialization badge log: `[YTMusic Awaker] Protected render initialized`.
+   - You will see the initialization badge log: `[YTMusic Awaker] Render protection initialized`.
    - Type `__ytmusicAwaker` in the Console and press Enter to inspect live internal metrics:
      ```js
      { active: true, pingsCount: 42, startTime: ..., lastPingTime: "15:48:30" }
@@ -57,13 +57,23 @@ You have 3 instant ways to verify the extension is active and protecting your pl
 
 ## 🚀 Installation Guide
 
-1. Open your browser's extensions manager:
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/<your-username>/ytmusic-awaker.git
+   ```
+   *(or download and extract the ZIP archive)*
+2. Open your browser's extensions manager:
    - **Chrome:** `chrome://extensions/`
    - **Edge:** `edge://extensions/`
    - **Brave:** `brave://extensions/`
-2. Enable **"Developer mode"** (toggle in the top-right corner).
-3. Click the **"Load unpacked"** button.
-4. Select the project directory:
-   `c:\Users\Кирилл\Documents\Проекты\ytmusic-awaker`
-5. Open or refresh [music.youtube.com](https://music.youtube.com).
-6. Look for the green `● Awaker: Active` badge in the bottom-right corner!
+3. Enable **"Developer mode"** (toggle switch in the top-right corner).
+4. Click the **"Load unpacked"** button.
+5. Select the root folder of this repository (the folder containing `manifest.json`).
+6. Open or refresh [music.youtube.com](https://music.youtube.com).
+7. Look for the green `● Awaker: Active` badge in the bottom-right corner!
+
+---
+
+## 📄 License
+
+MIT
